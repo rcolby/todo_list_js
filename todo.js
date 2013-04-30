@@ -2,12 +2,12 @@ $(document).ready(function() {
   $('#submitEntry').on('click', function(event) {
     event.preventDefault();
     var item = $('#task').val();
-    var li = $('<li><img src="trash.png" alt="Delete Item" class="delete">' + item + '</li>');
+    var listItem = $('<li><img src="trash.png" alt="Delete Item" class="delete">' + item + '</li>');
     if(item !== '') {
-      li.appendTo($('#todo'));
+      listItem.appendTo($('#todo'));
       $('#task').val('');
     }
-    li.on('click', function(){
+    listItem.on('click', function(){
       var thisItem = $(this);
       thisItem.slideUp('slow', function(){
       });
@@ -15,7 +15,8 @@ $(document).ready(function() {
       thisItem.slideDown('slow', function() {
       });
       thisItem.appendTo($('#completed'));
-    });    
+    });
+
     $('.delete').on('click', function() {
       $(this).parent().remove();
     });
