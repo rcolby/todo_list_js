@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="jquery-1.9.1.js"></script>
+  <script src="todo.js"></script>
+  <title>To Do</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="header">To-Do List</h1>
+    <div class="entryForm" id="entryForm">
+      <form>
+        <input type="text" id="task" class="item-entry" placeholder="Enter a Task">
+        <button id="submitEntry">Add Item</button>
+      </form>
+    </div>
+    <h3 class="header todo-list">To Do</h3>
+      <div class="list">
+        <ul id="todo" class="list-style">
+        </ul>
+      </div>
+    <h3 class="header complete-list">Completed</h3>
+      <div class="list">
+        <ul id="completed" class="list-style">
+        </ul>
+      </div>
+  </div>
+</body>
+</html>

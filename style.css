@@ -1,0 +1,68 @@
+body {
+  background-color: #339933;
+}
+
+.container {
+  width: 90%;
+  background-color: #FFFFCC;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  padding-bottom: 20px;
+}
+
+.header {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 36px;
+  margin-top: 50px;
+  text-align: center;
+  color: #669933;
+  padding: 20px;
+  font-style: italic;
+}
+
+.todo-list{
+  font-size: 24px;
+  padding: 10px;
+  font-style: normal;
+  color: red;
+}
+
+.complete-list{
+  font-size: 24px;
+  padding: 10px;
+  font-style: normal;
+  color: black;
+}
+
+.entryForm {
+  text-align: center;
+  padding: 10px;
+}
+
+.item-entry {
+  margin-left: 50px;
+  width: 400px;
+  height: 20px;
+}
+.list {
+  width: 400px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+.list-style{
+  list-style-type: none; 
+}
+
+.completed {
+  color: red;
+  text-decoration: line-through;
+}
+
+.delete {
+  margin-right: 20px;
+}
